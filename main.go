@@ -18,7 +18,7 @@ var exNum int
 func main() {
 	log.SetFlags(log.Lshortfile)
 
-	fmt.Println(`Enter the number of exercise you want to run: (To run exercise-1, type 1 and press ENTER)`)
+	fmt.Println(`Enter the exercise number you want to run: (To run exercise-1, type 1 and press ENTER)`)
 	_, err := fmt.Scan(&exNum)
 
 	if err != nil {
