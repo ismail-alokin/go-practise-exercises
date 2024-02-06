@@ -13,6 +13,19 @@ func PrintExerciseTitles(question string) {
 	fmt.Print("-------------------\n\n\n")
 }
 
+func GetAString(message string) string {
+	fmt.Println(message)
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	err := scanner.Err()
+	if err != nil {
+		log.Println("ERROR:", err)
+	}
+
+	return scanner.Text()
+}
+
 func GetStringArrayOfInputValues(message string, separator string) []string {
 	fmt.Print(message)
 

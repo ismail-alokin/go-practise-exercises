@@ -51,7 +51,11 @@ func Ex_7() {
 			numbersWithAllDigitsEven = append(numbersWithAllDigitsEven, strconv.Itoa(num))
 		}
 	}
-	result := strings.Join(numbersWithAllDigitsEven, inputSeperator)
-	fmt.Println("These are the numbers with all even digits:", result)
+	if len(numbersWithAllDigitsEven) == 0 {
+		fmt.Printf("These are no numbers between %d and %d with all even digits", lowerLimit, upperLimit)
+	} else {
+		result := strings.Join(numbersWithAllDigitsEven, inputSeperator)
+		fmt.Println("These are the numbers with all even digits:", result)
+	}
 
 }
