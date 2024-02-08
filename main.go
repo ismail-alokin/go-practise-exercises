@@ -7,6 +7,7 @@ import (
 	ex_1 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-1"
 	ex_10 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-10"
 	ex_11 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-11"
+	ex_12 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-12"
 	ex_2 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-2"
 	ex_3 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-3"
 	ex_4 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-4"
@@ -65,6 +66,9 @@ func main() {
 
 	case 11:
 		ex_11.Ex_11()
+
+	case 12:
+		ex_12.Ex_12()
 
 	default:
 		fmt.Println("-------- Exercise not found --------")
