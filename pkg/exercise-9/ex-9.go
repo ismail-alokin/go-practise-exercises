@@ -29,7 +29,7 @@ func Ex_9() {
 		}
 	}
 	if len(validPasswords) == 0 {
-		fmt.Println("These are no valid passwords")
+		fmt.Println("No valid passwords provided")
 	} else {
 		result := strings.Join(validPasswords, inputSeperator)
 		fmt.Println("Valid Passwords:", result)
