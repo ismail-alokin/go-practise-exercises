@@ -10,7 +10,7 @@ import (
 
 func PrintExerciseTitles(question string) {
 	fmt.Println(question)
-	fmt.Print("-------------------\n\n\n")
+	fmt.Print("\t\t-------------------\n\n")
 }
 
 func GetAString(message string) string {

@@ -10,6 +10,7 @@ import (
 	ex_12 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-12"
 	ex_13 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-13"
 	ex_14 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-14"
+	ex_15 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-15"
 	ex_2 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-2"
 	ex_3 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-3"
 	ex_4 "github.com/ismail-alokin/go-practise-exercises/pkg/exercise-4"
@@ -32,7 +33,7 @@ func main() {
 		log.Println("ERROR:", err)
 	}
 
-	fmt.Printf("You chose Exercise-%d\n\n", exNum)
+	fmt.Printf("You chose Exercise-%d\n", exNum)
 
 	switch exNum {
 
@@ -77,6 +78,9 @@ func main() {
 
 	case 14:
 		ex_14.Ex_14()
+
+	case 15:
+		ex_15.Ex_15()
 
 	default:
 		fmt.Println("-------- Exercise not found --------")
